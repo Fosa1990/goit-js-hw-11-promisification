@@ -30,7 +30,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a.current.refresh:hover {
   color: var(--yellow);
 }
 
@@ -40,4 +41,9 @@ a.current {
 
   color: var(--blue);
   text-decoration: underline;
+}
+
+a.current.refresh {
+  pointer-events: all;
+  cursor: pointer;
 }
